@@ -1,0 +1,26 @@
+Errores vistos a corregir:
+
+Arreglados:
+
+/* debería validar que exista una cedula igual en empleados como en beneficiarios a la hora de crear un beneficiario o empleado
+/* debería validar que un numero de teléfono no sea igual, tanto en beneficiarios como en empleados (falta editar).
+/* Poner periodo de horario entre citas, intervalo de 30min después de una cita (10:30), próxima cita (11:00)
+/* Crear citas debe tener validación de que no se puede registrar una cita vacía
+/* Al guardar el formulario de psicología en blanco, sale un alert (debería ser un toastr). Pero si valida
+/* Hacer validaciones en tiempo real para las citas ya programadas (tanto para el crear citas 
+/* como para la consulta psicológica)
+/* En "editar horario" debe haber un limite de horarios que se puedan agregar (maximo los 6 dias de la semana, contando si ya tiene un horario definido)
+/* el consultar cita no aparece seleccionado en el menu de navegacion al estar en el
+/* No elimina el insumo del inventario (corregir inventario completo)
+/* En la validación de citas del diagnostico validar que se cumpla solo si el diagnostico requiere cita, si no, que la validación
+no cumpla
+
+Por arreglar:
+
+Al "abrir imagen" de becas, no deja abrirlo, sale error que no es ni una imagen ni un pdf valido
+Los reportes deberían de detallar la fecha con la hora
+Al momento de un diagnostico psicológico, en el apartado de "retiro temporal" debe, aparte de obviamente registarse el diagnostico, poner el estatus = 0 al beneficiario que se esta retirando temporalmente
+Colocar un mensaje con sweetalert al momento de darle en "Cerrar sesión" preguntando si desea cerrar sesión y no que se cierre directamente al darle al botón.
+
+
+https://chatgpt.com/share/67f66692-226c-800e-8744-6c01311fb25e
