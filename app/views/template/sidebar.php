@@ -455,6 +455,29 @@
               </ul>
             </li>
 
+            <li class="nav-item <?php echo ($nivel1 == "bitacora") ? "active menu-open" : ""; ?>">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-exclamation-triangle"></i>
+                <p>
+                  Gestionar Mobiliario
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="index.php?action=inventario_mobiliario_index" class="nav-link <?php echo ($nivel1 == "Mobiliario" && $nivel2 == "crear") ? "active" : ""; ?>">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Crear</p>
+                  </a>
+
+                  <a href="#" class="nav-link <?php echo ($nivel1 == "bitacora" && $nivel2 == "consultar") ? "active" : ""; ?>">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Consultar</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
 
           <li class="nav-item">
             <a href="Manual/MANUAL.pdf" target="_blank" class="nav-link">

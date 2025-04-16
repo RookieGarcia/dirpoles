@@ -20,6 +20,8 @@ require_once 'app/controllers/DiscapacidadController.php';
 require_once 'app/controllers/ReportesController.php';
 require_once 'app/controllers/BitacoraController.php';
 require_once 'app/controllers/ReferenciasController.php';
+require_once 'app/controllers/InventarioMobiliarioController.php';
+
 
 $action = $_GET['action'] ?? 'login';
 
@@ -528,6 +530,41 @@ try {
         case 'eliminar_fames':
             eliminarFames();
             break;
+
+ //--------------------------------------- mobiliario
+ // INVENTARIO MOBILIARIO Y EQUIPOS
+case 'inventario_mobiliario_index':
+    inventario_mobiliario_index();
+    break;
+
+case 'inventario_mobiliario_registrar':
+    inventario_mobiliario_registrar();
+    break;
+
+case 'inventario_mobiliario_guardar':
+    inventario_mobiliario_guardar();
+    break;
+
+case 'inventario_mobiliario_ficha':
+    inventario_mobiliario_ficha();
+    break;
+
+case 'inventario_mobiliario_guardar_ficha':
+    inventario_mobiliario_guardar_ficha();
+    break;
+
+case 'inventario_mobiliario_ver_ficha':
+    inventario_mobiliario_ver_ficha();
+    break;
+
+case 'inventario_mobiliario_historial':
+    inventario_mobiliario_historial();
+    break;
+
+case 'inventario_mobiliario_imprimir_ficha':
+    inventario_mobiliario_imprimir_ficha();
+    break;
+    
 
             //--------------------------------------- REPORTES
 
